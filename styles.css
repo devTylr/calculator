@@ -17,36 +17,53 @@ body {
     flex-direction: column;
     width: 400px;
     height: 500px;
-    border: 1px solid gray;
+    border: 4px solid gray;
 }
 
 #display {
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: right;
+    align-items: center;
     height: 100px;
     width: auto;
-    border: 1px solid blue;
+    border-bottom: 4px solid gray;
+}
+
+#display p {
+    padding: 10px;
 }
 
 #buttons {
     display: flex;
     height: 100%;
     width: 100%;
-    border: 1px solid red;
 }
 
 #numbers {
-    border: 1px solid green;
+    flex-grow: 2.6;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    width: 80%;
 }
 
 #operators {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(255, 225, 0);
+}
+
+#operators button {
+    background-color: rgb(255, 255, 134);
 }
 
 button {
     flex-grow: 1;
+    font-size: 1rem;
+}
+
+#clear {
+    color: white;
+    background-color: rgb(199, 0, 0);
 }

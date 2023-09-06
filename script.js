@@ -14,10 +14,6 @@ const divide = function(a, b) {
     return a / b;
 }
 
-let firstNumber;
-let SecondNumber;
-let operator;
-
 const operate = function(operator, num1, num2) {
     switch (operator) {
         case '+':
