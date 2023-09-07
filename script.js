@@ -1,3 +1,7 @@
+const display = document.querySelector('#display');
+const clear = document.querySelector('#clear');
+const numbers = Array.from(document.querySelectorAll('.number'));
+
 const add = function(a, b) {
     return a + b;
 }
@@ -30,4 +34,17 @@ const operate = function(operator, num1, num2) {
             break;
     }
 }
-console.log(operate('-', 60, 6))
+
+const clearDisplay = function() {
+    display.textContent = '';
+}
+
+let currentValue;
+
+numbers.forEach((number => {
+    number.addEventListener('click', (e) => {
+        display.textContent = `${e.target.textContent}`;
+    })
+}));
+
+clear.addEventListener('click', clearDisplay);

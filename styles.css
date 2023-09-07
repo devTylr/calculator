@@ -32,7 +32,8 @@ body {
 }
 
 #display p {
-    padding: 10px;
+    padding: 0px;
+    margin: 0;
 }
 
 #buttons {
