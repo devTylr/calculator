@@ -1,4 +1,4 @@
-const display = document.querySelector('#display');
+const display = document.querySelector('#display-text');
 const clear = document.querySelector('#clear');
 const numbers = Array.from(document.querySelectorAll('.number'));
 
@@ -39,11 +39,9 @@ const clearDisplay = function() {
     display.textContent = '';
 }
 
-let currentValue;
-
 numbers.forEach((number => {
     number.addEventListener('click', (e) => {
-        display.textContent = `${e.target.textContent}`;
+        display.textContent += `${e.target.textContent}`;
     })
 }));
 
